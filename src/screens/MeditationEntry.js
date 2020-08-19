@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Image,
   ScrollView,
+  
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import LinearGradient from 'react-native-linear-gradient';
@@ -19,6 +20,7 @@ import SCREENS from '../../SCREENS';
 import {copilot, walkthroughable, CopilotStep} from 'react-native-copilot';
 import {UPDATE_USER} from '../graphql/mutation';
 import TimerImg from '../assets/images/Timer.png';
+import HomeScreem from './Home'
 
 const WalkthroughableView = walkthroughable(View);
 
@@ -118,9 +120,10 @@ function MeditationEntry({navigation, start, copilotEvents}) {
   }
 
   return (
-    <>
-      <View style={styles.container}>
-        {/* <View style={styles.topMargin}>
+    <><View  style={styles.container}><HomeScreem/></View>
+     
+      {/* <View style={styles.container}>
+        <View style={styles.topMargin}>
           <Text style={styles.userName}>Welcome to Your</Text>
           <Text style={styles.titleTextOne}>Meditation</Text>
           <Text style={styles.titleTextTwo}>Room</Text>
@@ -130,7 +133,7 @@ function MeditationEntry({navigation, start, copilotEvents}) {
               {getMeditationDuration(seconds)}
             </Text>
           </View>
-        </View> */}
+        </View>
       </View>
       <View style={styles.containerTwo}>
         {!isClicked ? (
@@ -140,7 +143,7 @@ function MeditationEntry({navigation, start, copilotEvents}) {
             name="openApp">
             <WalkthroughableView style={styles.buttonContainer}>
               <>
-                {/* <TouchableOpacity
+                <TouchableOpacity
                   onPress={() => checkMorningSession()}
                   style={styles.morningBtn}>
                   <LinearGradient
@@ -150,8 +153,8 @@ function MeditationEntry({navigation, start, copilotEvents}) {
                     style={styles.button}>
                     <Text style={styles.buttonText}>Morning</Text>
                   </LinearGradient>
-                </TouchableOpacity> */}
-                {/* <TouchableOpacity
+                </TouchableOpacity>
+                <TouchableOpacity
                   style={styles.eveningBtn}
                   onPress={() => checkEveningSession()}>
                   <LinearGradient
@@ -161,7 +164,7 @@ function MeditationEntry({navigation, start, copilotEvents}) {
                     style={styles.button}>
                     <Text style={styles.buttonText}>Evening</Text>
                   </LinearGradient>
-                </TouchableOpacity> */}
+                </TouchableOpacity>
               </>
             </WalkthroughableView>
           </CopilotStep>
@@ -224,7 +227,7 @@ function MeditationEntry({navigation, start, copilotEvents}) {
             </Text>
           </LinearGradient>
         </Animatable.View>
-      ) : null}
+      ) : null} */}
     </>
   );
 }
@@ -245,7 +248,7 @@ export default copilot({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.5,
+    flex: 1,
     backgroundColor: '#252525',
     justifyContent: 'center',
   },
