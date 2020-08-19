@@ -33,18 +33,18 @@ export default function Summary({userData, concentricCircleData}) {
       style={styles.container}
       // onPress={() => navigation.navigate('ActivityScreen')}
     >
-      <View style={styles.containerHeader}>
+      {/* <View style={styles.containerHeader}>
         <View style={styles.title}>
           <ActivityIcon name="pulse" color={'#0fb6cd'} size={25} />
-          <Text style={styles.titleText}>Today's Activity</Text>
+          <Text style={styles.titleText}>List of consults</Text>
         </View>
         {/* <View style={{margin: 5, marginTop: 10}}>
           <ActivityIcon name="greater-than" color={'#0fb6cd'} size={15} />
         </View> */}
-      </View>
+      {/* </View>  */}
 
-      <View style={styles.containerBody}>
-        <View style={styles.subContainerBody}>
+      {/* <View style={styles.containerBody}> */}
+        {/* <View style={styles.subContainerBody}>
           <Text style={styles.coinText}>Coins</Text>
           <View style={styles.bodyText}>
             <Text style={styles.coinTextTwo}>
@@ -57,8 +57,8 @@ export default function Summary({userData, concentricCircleData}) {
               resizeMode="contain"
             />
           </View>
-        </View>
-        <View style={styles.subContainerBody}>
+        </View> */}
+        {/* <View style={styles.subContainerBody}>
           <Text style={styles.xpsText}>Xp's</Text>
           <View style={styles.bodyText}>
             <Text style={styles.bodyTextTwo}>
@@ -71,16 +71,16 @@ export default function Summary({userData, concentricCircleData}) {
               resizeMode="contain"
             />
           </View>
-        </View>
+        </View> */}
 
-        <View style={styles.subContainerBody}>
+        {/* <View style={styles.subContainerBody}>
           <Text style={styles.intentionText}>Intentions</Text>
           <View style={styles.bodyText}>
             <Text style={styles.bodyTextTwo}>
               {userData && userData.getUser.tasks.items.length}
             </Text>
           </View>
-        </View>
+        </View> */}
 
         {/* <View style={styles.subContainerBody}>
           <ProgressChart
@@ -94,7 +94,7 @@ export default function Summary({userData, concentricCircleData}) {
             style={styles.progressChart}
           />
         </View> */}
-      </View>
+      {/* </View> */}
     </TouchableOpacity>
   );
 }

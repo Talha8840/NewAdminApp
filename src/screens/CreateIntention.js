@@ -153,7 +153,7 @@ function CreateIntention({navigation, route, start, copilotEvents}) {
           }>
           <Icon name="ios-arrow-back" color={'#0fb6cd'} size={30} />
         </TouchableOpacity>
-        <Text style={styles.headerText}>Take charge of your life</Text>
+        <Text style={styles.headerText}>Add Consult</Text>
       </View>
       <Formik
         enableReinitialize={true}
@@ -245,7 +245,7 @@ function CreateIntention({navigation, route, start, copilotEvents}) {
                   onChangeText={handleChange('intentionName')}
                   value={values.intentionName}
                   placeholderTextColor="#cccfd2"
-                  placeholder="Intention name"
+                  placeholder="Patient Name"
                 />
                 {errors.intentionName && touched.intentionName && (
                   <View style={styles.messageContainer}>
@@ -358,7 +358,7 @@ function CreateIntention({navigation, route, start, copilotEvents}) {
                   onChangeText={handleChange('description')}
                   value={values.description}
                   placeholderTextColor="#cccfd2"
-                  placeholder="Type in the Habit that you want to develop in the future."
+                  placeholder="Any Query for Doctor"
                 />
                 {errors.description && touched.description && (
                   <View style={styles.messageContainer}>
@@ -375,7 +375,7 @@ function CreateIntention({navigation, route, start, copilotEvents}) {
                   end={{x: 0, y: 0}}
                   colors={['#06b5d2', '#3ebdb4']}
                   style={styles.button}>
-                  <Text style={styles.buttonText}>Set as New Intention</Text>
+                  <Text style={styles.buttonText}>Add New Consult</Text>
                 </LinearGradient>
               </TouchableOpacity>
             ) : (

@@ -365,7 +365,7 @@ function HomeScreenIndex({navigation, start, copilotEvents}) {
           order={1}
           name="summary">
           <WalkthroughableView>
-            <Text style={styles.summary}>Summary</Text>
+            <Text style={styles.summary}>List Of Consults</Text>
 
             <Summary
               navigation={navigation}

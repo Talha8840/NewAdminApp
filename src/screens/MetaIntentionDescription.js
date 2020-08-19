@@ -70,7 +70,7 @@ export default function MetaIntentionDescription({navigation, route}) {
           <Text style={styles.text}>
             If your Meta Life is to make 10 Million a month. Don’t keep your
             Meta Task as "I want to get a promotion" or "I want to get more
-            clients. Remember this is a Habit. Keep your Meta Task as “ I will
+            clients. Remember this is a Habit. Keep your Meta Task as “ 
             work on so and so skill every day” This Habit should be the path to
             your Meta Life.
           </Text>
