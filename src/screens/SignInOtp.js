@@ -9,6 +9,7 @@ import {Auth} from 'aws-amplify';
 import SCREENS from '../../SCREENS';
 
 export default function SignInOtp({navigation, route}) {
+  
   const [timerId, setTimerId] = useState(1);
   const [user, setUser] = useState(route.params.user);
   const [resendOtp, setResendOtp] = useState(false);

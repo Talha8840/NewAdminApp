@@ -313,7 +313,7 @@ function HomeScreenIndex({navigation, start, copilotEvents}) {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity
+      {/* <TouchableOpacity
         style={styles.subContainerOne}
         onPress={() =>
           navigation.navigate(SCREENS.PROFILE_SCREEN, {
@@ -322,8 +322,8 @@ function HomeScreenIndex({navigation, start, copilotEvents}) {
             calculatedRank,
             loadingLvl,
           })
-        }>
-        <View style={styles.profileContainer}>
+        }> */}
+        {/* <View style={styles.profileContainer}> */}
           {/* <AnimatedCircularProgress
             size={90}
             rotation={0}
@@ -333,7 +333,7 @@ function HomeScreenIndex({navigation, start, copilotEvents}) {
             tintColor="#0fb6cd"
             backgroundColor="#3d5875">
             {fill => ( */}
-          <Image
+          {/* <Image
             resizeMode="cover"
             source={
               userData && userData.getUser.url
@@ -341,24 +341,24 @@ function HomeScreenIndex({navigation, start, copilotEvents}) {
                 : avatarImg
             }
             style={styles.avatar}
-          />
+          /> */}
           {/* )}
           </AnimatedCircularProgress> */}
 
-          <Text style={styles.levelText}>
+          {/* <Text style={styles.levelText}>
             Lvl {userData && userData.getUser.levelId}
-          </Text>
-        </View>
+          </Text> */}
+        {/* </View> */}
 
-        <View style={styles.pointsContainer}>
+        {/* <View style={styles.pointsContainer}>
           <View style={styles.points}>
             <Text style={styles.socioCoinsText}>
               {userData && userData.getUser.socioCoins}
             </Text>
             <Image source={CoinImg} style={styles.iconImg} />
           </View>
-        </View>
-      </TouchableOpacity>
+        </View> */}
+      {/* </TouchableOpacity> */}
       <ScrollView style={styles.subContainerTwo}>
         <CopilotStep
           text="This is the Summary of your Today's activities."
