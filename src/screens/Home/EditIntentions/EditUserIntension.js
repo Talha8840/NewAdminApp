@@ -72,7 +72,7 @@ export default function EditUserIntension({navigation, intention}) {
           }>
           <Icon name="ios-arrow-back" color={'#0fb6cd'} size={30} />
         </TouchableOpacity>
-        <Text style={styles.headerText}>Take charge of your life</Text>
+        <Text style={styles.headerText}>Edit Your Consult</Text>
       </View>
       <Formik
         enableReinitialize={true}
@@ -232,7 +232,7 @@ export default function EditUserIntension({navigation, intention}) {
                 end={{x: 0, y: 0}}
                 colors={['#06b5d2', '#3ebdb4']}
                 style={styles.button}>
-                <Text style={styles.buttonText}>Update Intention</Text>
+                <Text style={styles.buttonText}>Update Consult</Text>
               </LinearGradient>
             </TouchableOpacity>
           </View>

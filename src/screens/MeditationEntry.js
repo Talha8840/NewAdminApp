@@ -20,7 +20,7 @@ import SCREENS from '../../SCREENS';
 import {copilot, walkthroughable, CopilotStep} from 'react-native-copilot';
 import {UPDATE_USER} from '../graphql/mutation';
 import TimerImg from '../assets/images/Timer.png';
-import HomeScreem from './Home'
+import HomeScreen from './Home/index'
 
 const WalkthroughableView = walkthroughable(View);
 
@@ -120,7 +120,7 @@ function MeditationEntry({navigation, start, copilotEvents}) {
   }
 
   return (
-    <><View  style={styles.container}><HomeScreem/></View>
+    <><View  style={styles.container}><HomeScreen/></View>
      
       {/* <View style={styles.container}>
         <View style={styles.topMargin}>
