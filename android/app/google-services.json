@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "823641309154",
+    "firebase_url": "https://litt-c253c.firebaseio.com",
+    "project_id": "litt-c253c",
+    "storage_bucket": "litt-c253c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823641309154:android:f76f8c23a79c81832ac3bb",
+        "android_client_info": {
+          "package_name": "com.litt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823641309154-gv0ho2pl675b8m2ebil9khmsikkonqo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuWTjdlpHx1ByxsL3mONdc2Q_9Km2c1XM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823641309154-gv0ho2pl675b8m2ebil9khmsikkonqo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+diff --git a/node_modules/react-native-sound/.DS_Store b/node_modules/react-native-sound/.DS_Store
+new file mode 100644
+index 0000000..39f9ade
+Binary files /dev/null and b/node_modules/react-native-sound/.DS_Store differ
+diff --git a/node_modules/react-native-sound/RNSound.xcodeproj/xcuserdata/pipesort.xcuserdatad/xcschemes/xcschememanagement.plist b/node_modules/react-native-sound/RNSound.xcodeproj/xcuserdata/pipesort.xcuserdatad/xcschemes/xcschememanagement.plist
+new file mode 100644
+index 0000000..927ecb0
+--- /dev/null
++++ b/node_modules/react-native-sound/RNSound.xcodeproj/xcuserdata/pipesort.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++<plist version="1.0">
++<dict>
++	<key>SchemeUserState</key>
++	<dict>
++		<key>RNSound.xcscheme_^#shared#^_</key>
++		<dict>
++			<key>orderHint</key>
++			<integer>75</integer>
++		</dict>
++	</dict>
++</dict>
++</plist>
+diff --git a/node_modules/react-native-sound/RNSound/RNSound.m b/node_modules/react-native-sound/RNSound/RNSound.m
+index 5950dfe..a4ccf7d 100644
+--- a/node_modules/react-native-sound/RNSound/RNSound.m
++++ b/node_modules/react-native-sound/RNSound/RNSound.m
+@@ -198,7 +198,7 @@ - (NSDictionary *)constantsToExport {
+     if ([fileName hasPrefix:@"http"]) {
+         fileNameUrl = [NSURL URLWithString:fileName];
+         NSData *data = [NSData dataWithContentsOfURL:fileNameUrl];
+-        player = [[AVAudioPlayer alloc] initWithData:data error:&error];
++        player = [[AVAudioPlayer alloc] initWithData:data fileTypeHint:AVFileTypeMPEGLayer3 error:&error];
+     } else if ([fileName hasPrefix:@"ipod-library://"]) {
+         fileNameUrl = [NSURL URLWithString:fileName];
+         player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileNameUrl
