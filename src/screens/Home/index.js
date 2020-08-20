@@ -611,7 +611,7 @@ const styles = StyleSheet.create({
   },
   iconMargin: {marginLeft: 10},
   summary: {
-    marginLeft: 20,
+   textAlign:'center',
     fontSize: 26,
     color: '#eeeeee',
     fontWeight: '900',
